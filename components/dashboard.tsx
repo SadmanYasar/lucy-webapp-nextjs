@@ -6,6 +6,7 @@ import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { JSX, SVGProps } from "react"
+import { ModeToggle } from "./ui/modeToggle"
 
 export function Dashboard() {
   return (
@@ -15,10 +16,14 @@ export function Dashboard() {
           <AvatarImage alt="User avatar" src="/placeholder-avatar.jpg" />
           <AvatarFallback>JP</AvatarFallback>
         </Avatar>
-        <div className="ml-2 md:ml-4">
-          <div className="font-medium text-base md:text-lg">John Doe</div>
-          <div className="text-xs text-gray-500">john.doe@example.com</div>
-        </div>
+        {/* <div className="flex">
+          <ModeToggle />
+          <div className="ml-2 md:ml-4">
+            <div className="font-medium text-base md:text-lg">John Doeto</div>
+            <div className="text-xs text-gray-500">john.doe@example.com</div>
+          </div>
+        </div> */}
+        <ModeToggle />
       </header>
       <main className="grid gap-2 md:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <Card>
